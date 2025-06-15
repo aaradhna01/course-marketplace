@@ -1,0 +1,28 @@
+.homepage-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-section {
+  background-color: #f8f9fa;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.hero-buttons .btn {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+.features {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.features ul {
+  list-style-type: 🔹;
+  padding-left: 20px;
+}
