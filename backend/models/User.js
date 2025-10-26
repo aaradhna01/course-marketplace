@@ -18,9 +18,20 @@ const User = sequelize.define('User', {
     validate: {
       isIn: [['student', 'instructor']]
     }
+  },
+  resetToken: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  resetTokenExpiry: {
+    type: DataTypes.DATE,
+    allowNull: true,
   }
+  
 }, {
   timestamps: true
-});
+} );
+
+
 
 module.exports = User;
