@@ -1,4 +1,3 @@
-// 📁 backend/server.js
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
@@ -7,7 +6,6 @@ const { sequelize } = require('./models');
 const authRoutes = require('./routes/authRoutes');
 const courseRoutes = require('./routes/courseRoutes');
 const enrollRoutes = require('./routes/enrollRoutes');
-
 
 const app = express();
 const PORT = process.env.PORT || 3003;
@@ -32,4 +30,3 @@ sequelize.sync({ alter: true })
   .catch((err) => {
     console.error('❌ DB Sync Error:', err);
   });
-

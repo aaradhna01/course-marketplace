@@ -1,10 +1,12 @@
-// 📁 backend/routes/enrollRoutes.js
-const express = require('express');
-const { enroll, myCourses } = require('../controllers/enrollController');
-const auth = require('../middlewares/auth');
+const express = require("express");
+const { enrollCourse, getMyCourses } = require("../controllers/enrollController");
+const auth = require("../middlewares/auth");
 const router = express.Router();
 
-router.post('/:courseId', auth, enroll);
-router.get('/my', auth, myCourses);
+// ✅ Enroll in a course (POST)
+router.post("/:courseId", auth, enrollCourse);
+
+// ✅ Get my enrolled courses (GET)
+router.get("/my", auth, getMyCourses);
 
 module.exports = router;
